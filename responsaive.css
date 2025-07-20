@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+    height: 400vh;
+    overflow-x: hidden;
+}
+nav{
+    background-color:rgba(7, 7, 7, 0.2) ;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   color: white;
+   padding: 20px;
+   height: 85px;
+  overflow: hidden;
+  z-index: 3;
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   align-content: center;
+}
+.parent2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+.parent3{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+.parent4{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    cursor: pointer;
+}
+.logo{
+       position: sticky;
+    left: 130px;
+   font-size: larger;
+}
+.pop{
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+.pop:hover{
+    border-bottom: 2px solid white;
+    transition: 1s ease-in-out;
+    transform: scale(1.1);
+
+}
+.menu{
+    position: absolute;
+    left:10px;
+    top: 0;
+    background-color: rgba(26, 26, 26, 1);
+    padding-top: 35px;
+    padding-bottom: 30px;
+    padding-right: 35px;
+    padding-left: 60px;
+    margin-left: -20px;
+    cursor: pointer;
+}
+.Empire{
+    font-family: 'Sacramento', cursive;
+}
+
+.dot{
+    position: relative;
+    right:38px ;
+    top: 8px;
+    background-color: yellow;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.Fruits{
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    margin-left:90px;
+    margin-right: 120px;
+    width:  calc(100% - 90px);
+       background-image: radial-gradient(circle at center 70%, rgb(67, 68, 74) 0%, rgb(19, 19, 24) 50%, rgb(14, 13, 13) 100%);
+}
+.imganannas{
+    width: 350px;
+    height: 450px;
+    
+   
+}
+.sideicon{
+    width: 50px;
+    background-color: rgba(222, 199, 0, 1);
+    height: 190px;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 120px;
+    border-radius: 30px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 2;
+}
+.div-one{
+    margin-top: 20px;
+}
+.one{
+    line-height: 35px;
+    font-size: 25px;
+    
+}
+.underone{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 1;
+    color: rgba(255, 255, 255, 1);
+}
+.three{
+    font-family: "Roboto", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+.three_right{
+    margin-left: 10px;
+    font-family: "Sacramento", cursive;
+    color: rgba(222, 199, 0, 1);
+}
+.three_under{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 1;
+    color: rgba(255, 255, 255, 1);
+}
+.div-three{
+    margin-top: 90px;
+
+}
+.icon-hover {
+    position: fixed;
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+   visibility: hidden;
+   top: 30px;
+  left: 300px;
+}
+
+.hover-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 10;
+    top: 50px;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    height: 100px;
+}
+
+
+@media screen and (max-width: 841px){
+  
+    .parent2{
+        display: none;
+    }
+   
+    .logo{
+    position: fixed;
+    left: 130px;
+    }
+    .icon-hover {
+   visibility: visible;
+}
+  .icon-hover:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+ transform: scale(1.1);
+
+}
+
+}
+@media screen and (max-width: 600px) {
+    .Fruits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }  
+  
+}
